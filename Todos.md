@@ -1,7 +1,7 @@
 # Todo List for Koi Pond Project
 
 - make flow chart of koi pond game parameters
-- begin coding
+- ~~begin coding~~
 - create graphics for
 - read documents on SVG JavaScript animation
 - pull KoiPond branch to local work drive

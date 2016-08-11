@@ -1,0 +1,25 @@
+{
+  "name": "koi-pond",
+  "version": "1.0.0",
+  "description": "json package for KoiPond",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janusoo/KoiPond.git"
+  },
+  "author": "Kent C J Miller <janusoo@gmail.com> (http://koinobori.co/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/janusoo/KoiPond/issues"
+  },
+  "homepage": "https://github.com/janusoo/KoiPond#readme",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}

@@ -9,6 +9,9 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main style sheet -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,24 +21,27 @@
   <![endif]-->
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <h1>Welcome to the Koi Pond.</h1>
+  <h2>Relax. And feed some fish!</h2>
 
-  <!-- Firebase script -->
-  <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDnUp_wHnqiwtl9CQbJ84ultJUy6sxKsqs",
-      authDomain: "koipond-53e4a.firebaseapp.com",
-      databaseURL: "https://koipond-53e4a.firebaseio.com",
-      storageBucket: "koipond-53e4a.appspot.com",
-    };
-    firebase.initializeApp(config);
-  </script>
+<!-- Firebase script -->
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyDnUp_wHnqiwtl9CQbJ84ultJUy6sxKsqs",
+  authDomain: "koipond-53e4a.firebaseapp.com",
+  databaseURL: "https://koipond-53e4a.firebaseio.com",
+  storageBucket: "koipond-53e4a.appspot.com",
+};
+firebase.initializeApp(config);
+</script>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Main JavaScript file -->
+<script src="js/index.js"></script>
 </body>
 </html>

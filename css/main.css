@@ -109,6 +109,26 @@ h1 {
 h2 {
     color: #00245D;
 }
+header {
+    height: 125px;
+}
+header .container-fluid {
+    height: 100%;
+}
+header .container-fluid .row {
+    height: 100%;
+}
+header .container-fluid .row .col-xs-6 {
+    height: 100%;
+}
+.header-right-column {
+    position: relative;
+}
+.how-to-play {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
 
 /* ==========================================================================
    Helper classes

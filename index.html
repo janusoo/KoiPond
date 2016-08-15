@@ -11,6 +11,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Main style sheet -->
   <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet">
 
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -23,28 +24,45 @@
   <![endif]-->
 </head>
 <body>
-  <h1>Welcome to the Koi Pond.</h1>
-  <h2>Relax. And feed some fish!</h2>
+  <header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-6">
+				<h1>Welcome to the Koi Pond.</h1>
+				<h2>Relax. And feed the fish!</h2>
+			</div>
+			<div class="col-xs-6 header-right-column">
+				<button class="how-to-play"><a href="#how-to-play" rel="modal:open">how to play</a></button>
+			</div>
+		</div>
+	</div>
+  </header>
 
-<!-- Firebase script -->
-<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-<script>
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyDnUp_wHnqiwtl9CQbJ84ultJUy6sxKsqs",
-  authDomain: "koipond-53e4a.firebaseapp.com",
-  databaseURL: "https://koipond-53e4a.firebaseio.com",
-  storageBucket: "koipond-53e4a.appspot.com",
-};
-firebase.initializeApp(config);
-</script>
+  <!-- Modals -->
+  <form id="how-to-play" class="modal">
+  	<p>It&rsquo;s easy! Simply click or touch anywhere on the screen to drop a little food in the water and the koi will come to that location to feed.</p>
+  </form>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<!-- Main JavaScript file -->
-<script src="js/index.js"></script>
+	<!-- Firebase script -->
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+	  apiKey: "AIzaSyDnUp_wHnqiwtl9CQbJ84ultJUy6sxKsqs",
+	  authDomain: "koipond-53e4a.firebaseapp.com",
+	  databaseURL: "https://koipond-53e4a.firebaseio.com",
+	  storageBucket: "koipond-53e4a.appspot.com",
+	};
+	firebase.initializeApp(config);
+	</script>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Main JavaScript file -->
+	<script src="js/index.js"></script>
 </body>
 </html>

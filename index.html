@@ -11,7 +11,6 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Main style sheet -->
   <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet">
 
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -32,16 +31,33 @@
 				<h2>Relax. And feed the fish!</h2>
 			</div>
 			<div class="col-xs-6 header-right-column">
-				<button class="how-to-play"><a href="#how-to-play" rel="modal:open">how to play</a></button>
+				<button type="button" class="btn btn-primary btn-lg how-to-play" data-toggle="modal" data-target="#playInstructionsModal">
+          how to play
+        </button>
 			</div>
 		</div>
 	</div>
   </header>
 
   <!-- Modals -->
-  <form id="how-to-play" class="modal">
-  	<p>It&rsquo;s easy! Simply click or touch anywhere on the screen to drop a little food in the water and the koi will come to that location to feed.</p>
-  </form>
+  <div class="modal fade" id="playInstructionsModal" tabindex="-1" role="dialog" aria-labelledby="playInstructionsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">How to Play</h4>
+        </div>
+        <div class="modal-body">
+          It&rsquo;s easy! Simply click or touch anywhere on the screen to drop a little food in the water and the koi will come to that location to feed.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 	<!-- Firebase script -->
 	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
@@ -61,7 +77,6 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins.js"></script>
-	<script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
 	<!-- Main JavaScript file -->
 	<script src="js/index.js"></script>
 </body>

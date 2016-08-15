@@ -124,10 +124,17 @@ header .container-fluid .row .col-xs-6 {
 .header-right-column {
     position: relative;
 }
-.how-to-play {
+.btn.btn-primary.btn-lg.how-to-play {
+    background: #c26837;
+    border: 2px solid #00245d;
+    color: #00245d;
+    font-weight: bold;
     position: absolute;
     right: 15px;
     bottom: 10px;
+}
+.btn.btn-primary.btn-lg.how-to-play:hover {
+    background: #f58345;
 }
 
 /* ==========================================================================

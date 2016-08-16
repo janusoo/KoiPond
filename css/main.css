@@ -136,6 +136,17 @@ header .container-fluid .row .col-xs-6 {
 .btn.btn-primary.btn-lg.how-to-play:hover {
     background: #f58345;
 }
+/* SVG styles */
+svg.koi-svg-1 {
+    motion-path: path("M3.9,74.8c0,0,0-106.4,75.5-42.6S271.8,184,252.9,106.9s-47.4-130.9-58.2-92s59.8,111.2-32.9,126.1 S5.9,138.6,3.9,74.8z");
+    position: absolute;
+    -webkit-animation: motionpathguy 10s linear infinite both;
+    animation: motionpathguy 10s linear infinite both;
+}
+
+/* ==========================================================================
+   END Author's custom styles
+   ========================================================================== */
 
 /* ==========================================================================
    Helper classes

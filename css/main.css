@@ -95,7 +95,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+    ⬇︎⬇︎⬇︎ Author's custom styles ⬇︎⬇︎⬇︎
    ========================================================================== */
 
 body {
@@ -136,16 +136,24 @@ header .container-fluid .row .col-xs-6 {
 .btn.btn-primary.btn-lg.how-to-play:hover {
     background: #f58345;
 }
-/* SVG styles */
+/* SVG animation styles */
 svg.koi-svg-1 {
     motion-path: path("M3.9,74.8c0,0,0-106.4,75.5-42.6S271.8,184,252.9,106.9s-47.4-130.9-58.2-92s59.8,111.2-32.9,126.1 S5.9,138.6,3.9,74.8z");
     position: absolute;
-    -webkit-animation: motionpathguy 10s linear infinite both;
-    animation: motionpathguy 10s linear infinite both;
+    -webkit-animation: motionpathkoi-one 20s linear infinite both;
+    -moz-animation: motionpathkoi-one 20s linear infinite both;
+    animation: motionpathkoi-one 20s linear infinite both;
+    width: 300px;
+    z-index: -100;
+}
+@keyframes motionpathkoi-one {
+    100% {
+        motion-offset: 100%;
+    }
 }
 
 /* ==========================================================================
-   END Author's custom styles
+    ⬆︎⬆︎⬆︎ END Author's custom styles ⬆︎⬆︎⬆︎
    ========================================================================== */
 
 /* ==========================================================================

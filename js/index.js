@@ -16,18 +16,35 @@
 //     return { top: Math.round(top), left: Math.round(left) };
 // }
 
+// $('window').on('click', setNewCoord());
+
+var windowWidth = $(window).width();
+var windowHeight = $(window).height();
+var windowDimensions = windowWidth + ' x ' + windowHeight;
+
+var yCoord;
+var xCoord;
+
+function setKoiCoord() {
+	yCoord = Math.random() * 100 + "%";
+	xCoord = Math.random() * 100 + "%";
+	$('#koiSvg1').css({'top' : yCoord , 'left' : xCoord , 'display' : 'inline'});
+}
+
+function getCoords(e) {
+    $('#koiSvg1').css({'top' : e.pageY + 'px', 'left' : e.pageX + 'px', 'transition' : 'top 3s, left 3s'})
+}
+
+function setNewCoord() {
+	yCoord = Math.random() * 100 + '%';
+	xCoord = Math.random() * 100 + '%';
+	$('#koiSvg1').css({'top' : yCoord , 'left' : xCoord, 'transition' : 'top 20s, left 20s'});
+}
+
 $(document).ready(function() {
-	var windowWidth = $(window).width();
-	var windowHeight = $(window).height();
-	var windowDimensions = windowWidth + ' x ' + windowHeight;
+  setKoiCoord();
 
-	var xCoord = Math.random() * 100 + "%";
-	var yCoord = Math.random() * 100 + "%";
+	$('html').on('click', getCoords);
 
-	function setKoiCoord() {
-		$('#koiSvg1').css({"top" : yCoord , "left" : xCoord , "display" : "inline"});
-	}
-	setKoiCoord();
-
-	// $()
+	$('#koiSvg1').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', setNewCoord);
 })

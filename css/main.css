@@ -147,6 +147,9 @@ svg#koiSvg1 {
     width: 300px;
     z-index: -100;
     position: absolute;
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
 }
 /*@keyframes motionpathkoi-one {
     100% {

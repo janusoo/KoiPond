@@ -156,6 +156,22 @@ svg#koiSvg1 {
         motion-offset: 100%;
     }
 }*/
+svg#koiSvg2 {
+    display: none;
+    position: absolute;
+    transition: top 21s, left 21s;
+    width: 300px;
+    z-index: -100;
+    transform-origin: 75% 50%;
+}
+svg#koiSvg3 {
+    display: none;
+    position: absolute;
+    transition: top 19s, left 19s;
+    width: 300px;
+    z-index: -100;
+    transform-origin: 75% 50%;
+}
 
 /* ==========================================================================
     ⬆︎⬆︎⬆︎ END Author's custom styles ⬆︎⬆︎⬆︎
